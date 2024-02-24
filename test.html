@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  
-</head>
+
 <body>
  
-  
+  <h1>JavaScript Arrays</h1>
+  <h2>the filter method</h2>
+  <h3>click the "test" to get every element in the array that are bigger than the input number</h3>
+  <input type="number" id="agetocheck">
+  <br>
+  <button onclick="myf2()">click me</button>
 
-  <script  src="test.js"></script>
+  <p id="myr"></p>
+
+  <script>
+    arr=[22,12,15,33,19,76,17,63];
+
+    function myf(x){
+      return x > document.getElementById("agetocheck").value;
+    }
+
+    function myf2(){
+      document.getElementById('myr').innerHTML=arr.filter(myf);
+    }
+    
+  </script>
+
+
+
 </body>
 </html>
